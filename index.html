@@ -21,9 +21,9 @@
 </head>
 
 <body class="font-lato">
-    <header class=" max-w-screen-2xl mx-auto">
+    <header>
         <!-- nav bar- without responsive -->
-        <nav class="mt-10">
+        <nav class=" max-w-screen-2xl mx-auto mt-10">
             <div class="navbar bg-[#F85559] rounded-full px-10 py-2 text-white font-medium">
                 <div class="navbar-start">
                     <ul class="flex gap-7">
@@ -45,12 +45,12 @@
             </div>
         </nav>
         <!-- banner section with slider -->
-        <section class="mt-10">
-            <div class="carousel">
-                <div id="slide1" class="carousel-item relative w-full">
+        <section class="mt-10 max-w-screen-2xl mx-auto relative">
+            <div class="carousel w-[355px] h-[190px] md:h-full md:w-full">
+                <div id="slide1" class="carousel-item relative w-[355px] md:w-full">
                   <img src="./images/banner1.png" class="w-full" />
                   <div>
-                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col space-y-4 items-center justify-center bg-black bg-opacity-50">
+                    <div class="overlay absolute top-0 left-0 md:w-full md:h-full flex flex-col space-y-4 items-center justify-center bg-black bg-opacity-50">
                         <h1 class="text-7xl font-bold text-white">Exotic tastes at your</h1>
                         <h1 class="text-7xl font-bold text-white">DoorSteps</h1>
                         <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
@@ -107,11 +107,54 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-              </div>
+        </section>
+        <!-- mini fruit box -->
+        <section class="hidden md:max-w-6xl md:mx-auto md:items-center md:p-8 md:absolute md:bottom-10 md:left-1/4 md:bg-white md:shadow-md md:rounded-sm ">
+            <div class="grid grid-cols-5">
+                <img src="./images/fruit1.png" alt="">
+                <img src="./images/fruit2.png" alt="">
+                <img src="./images/fruit3.png" alt="">
+                <img src="./images/fruit4.png" alt="">
+                <img src="./images/fruit5.png" alt="">
+            </div>
         </section>
     </header>
     <main>
-        
+      <!-- Deal of the Day -->
+        <section class="max-w-screen-2xl mx-auto mt-52 flex flex-col md:flex-row justify-around items-center">
+          <div>
+            <h3 class="text-5xl font-extrabold mb-3">Deal of the day</h3>
+            <p class="text-base text-gray-400 font-medium">reat yourself to the freshest fruits and let each day be a celebration <br> of delectable flavors with our <br> "Fruit Deal of the Day." Experience nature's sweetness like never before!</p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:29"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:25;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:08;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
 
